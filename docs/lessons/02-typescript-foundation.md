@@ -1,4 +1,4 @@
-# 1강. TypeScript Foundation
+# 2강. TypeScript Foundation
 
 ## 학습 목표
 

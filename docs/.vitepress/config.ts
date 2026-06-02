@@ -27,15 +27,19 @@ export default defineConfig({
         items: [
           {
             text: "Modern JavaScript Foundation",
-            link: "/lessons/00-modern-javascript-foundation",
+            link: "/lessons/01-modern-javascript-foundation",
           },
           {
             text: "TypeScript Foundation",
-            link: "/lessons/01-typescript-foundation",
+            link: "/lessons/02-typescript-foundation",
           },
           {
-            text: "React Mental Model",
-            link: "/lessons/02-react-mental-model",
+            text: "React 사고 모델",
+            link: "/lessons/03-react-mental-model",
+          },
+          {
+            text: "State and Effects",
+            link: "/lessons/04-state-and-effects",
           },
         ],
       },
@@ -44,15 +48,19 @@ export default defineConfig({
         items: [
           {
             text: "ES5 코드 현대화",
-            link: "/exercises/00-modern-javascript-foundation",
+            link: "/exercises/01-modern-javascript-foundation",
           },
           {
             text: "주문 도메인 타입 정의",
-            link: "/exercises/01-typescript-foundation",
+            link: "/exercises/02-typescript-foundation",
           },
           {
-            text: "주문 목록 UI",
-            link: "/exercises/02-react-mental-model",
+            text: "주문 관리 미니 React 앱",
+            link: "/exercises/03-react-mental-model",
+          },
+          {
+            text: "주문 관리 앱에 State와 Effects 적용하기",
+            link: "/exercises/04-state-and-effects",
           },
         ],
       },

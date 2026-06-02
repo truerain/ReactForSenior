@@ -262,4 +262,4 @@ npm install -g pnpm
 
 ## 다음 단계
 
-환경 준비가 끝나면 [Modern JavaScript Foundation](./lessons/00-modern-javascript-foundation.md)부터 시작합니다.
+환경 준비가 끝나면 [Modern JavaScript Foundation](./lessons/01-modern-javascript-foundation.md)부터 시작합니다.

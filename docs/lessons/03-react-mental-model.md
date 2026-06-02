@@ -1,4 +1,4 @@
-# 2강. React Mental Model
+# 3강. React 사고 모델
 
 ## 학습 목표
 
@@ -66,7 +66,7 @@ items.map((item) => <TodoItem key={item.id} item={item} />);
 
 ## 실습
 
-제품 주문 목록 UI를 다음 조건으로 구현합니다.
+Vite React 프로젝트에서 주문 관리 미니 앱을 다음 조건으로 구현합니다.
 
 - 주문 목록, 상태 필터, 검색어 입력을 가진다.
 - 필터와 검색어는 local state로 관리한다.

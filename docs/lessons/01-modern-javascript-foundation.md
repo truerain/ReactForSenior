@@ -1,4 +1,4 @@
-# 0강. Modern JavaScript Foundation
+# 1강. Modern JavaScript Foundation
 
 ## 학습 목표
 

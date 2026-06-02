@@ -10,15 +10,17 @@
 
 ## 회차별 교재
 
-- [Modern JavaScript Foundation](./lessons/00-modern-javascript-foundation.md)
-- [TypeScript Foundation](./lessons/01-typescript-foundation.md)
-- [React Mental Model](./lessons/02-react-mental-model.md)
+- [Modern JavaScript Foundation](./lessons/01-modern-javascript-foundation.md)
+- [TypeScript Foundation](./lessons/02-typescript-foundation.md)
+- [React 사고 모델](./lessons/03-react-mental-model.md)
+- [State and Effects](./lessons/04-state-and-effects.md)
 
 ## 실습 과제
 
-- [ES5 코드 현대화](./exercises/00-modern-javascript-foundation.md)
-- [주문 도메인 타입 정의](./exercises/01-typescript-foundation.md)
-- [주문 목록 UI](./exercises/02-react-mental-model.md)
+- [ES5 코드 현대화](./exercises/01-modern-javascript-foundation.md)
+- [주문 도메인 타입 정의](./exercises/02-typescript-foundation.md)
+- [주문 관리 미니 React 앱](./exercises/03-react-mental-model.md)
+- [주문 관리 앱에 State와 Effects 적용하기](./exercises/04-state-and-effects.md)
 
 ## 운영 원칙
 

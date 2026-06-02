@@ -13,13 +13,13 @@
 
 ## 문서 구성
 
-- [00.학습준비.md](./00.학습준비.md): VS Code와 실습 환경 준비
-- [01.로드맵.md](./01.로드맵.md): 전체 학습 로드맵
-- [02.강의계획서.md](./02.강의계획서.md): 강의 운영안과 회차별 목표
-- [03.회차별교제/](./03.회차별교제): 회차별 교재
-- [04.실습과제/](./04.실습과제): 실습 과제
-- [05.참고자료/](./05.참고자료): 참고 자료와 읽을거리
-- [docs/](./docs): VitePress 문서 사이트 소스
+- [docs/](./docs): VitePress 문서 사이트 원본
+- [docs/setup.md](./docs/setup.md): VS Code와 실습 환경 준비
+- [docs/roadmap.md](./docs/roadmap.md): 전체 학습 로드맵
+- [docs/syllabus.md](./docs/syllabus.md): 강의 운영안과 Phase별 목표
+- [docs/lessons/](./docs/lessons): 회차별 교재
+- [docs/exercises/](./docs/exercises): 실습 과제
+- [docs/references/](./docs/references): 참고 자료와 읽을거리
 
 ## 문서 사이트 실행
 
@@ -38,6 +38,10 @@ npm run docs:preview
 ```
 
 GitHub Pages로 배포하려면 리포지토리 `Settings > Pages`에서 `Build and deployment > Source`를 `GitHub Actions`로 설정합니다. 이 리포지토리 이름이 `ReactForSenior`가 아니라면 [docs/.vitepress/config.ts](./docs/.vitepress/config.ts)의 `base` 값을 실제 리포지토리 이름에 맞게 수정해야 합니다.
+
+## 문서 작성 기준
+
+이 프로젝트는 `docs/`를 단일 원본으로 사용합니다. 새 교재, 실습, 참고자료는 `docs/lessons`, `docs/exercises`, `docs/references` 아래에 추가합니다.
 
 ## 권장 대상
 
