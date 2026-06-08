@@ -238,3 +238,68 @@ useEffect(() => {
 - `localStorage` 저장 effect를 하나로 합친다.
 - mock API 실패 버튼을 만들어 error state를 확인한다.
 - `document.title`에 현재 보이는 주문 수를 표시한다.
+
+## 콘솔 출력 확인
+
+비동기 로딩, 필터 저장, derived value, 상태 변경 흐름을 브라우저 개발자 도구 콘솔에서 확인합니다.
+
+mock API와 로딩 effect에 다음 로그를 추가합니다.
+
+```tsx
+function fetchOrders(): Promise<Order[]> {
+  console.log("fetch orders requested");
+
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      const nextOrders = [
+        { id: "ord_001", orderNo: "SO-2026-001", customerName: "Kim", status: "pending", totalPrice: 120000 },
+        { id: "ord_002", orderNo: "SO-2026-002", customerName: "Lee", status: "paid", totalPrice: 89000 },
+        { id: "ord_003", orderNo: "SO-2026-003", customerName: "Park", status: "shipped", totalPrice: 240000 },
+        { id: "ord_004", orderNo: "SO-2026-004", customerName: "Choi", status: "cancelled", totalPrice: 56000 },
+      ];
+
+      console.log("fetch orders resolved", nextOrders);
+      resolve(nextOrders);
+    }, 700);
+  });
+}
+```
+
+필터 저장 effect에는 저장되는 값을 출력합니다.
+
+```tsx
+useEffect(() => {
+  console.log("save order keyword", keyword);
+  localStorage.setItem("orderKeyword", keyword);
+}, [keyword]);
+
+useEffect(() => {
+  console.log("save order status", status);
+  localStorage.setItem("orderStatus", status);
+}, [status]);
+```
+
+derived value와 상태 변경 결과도 출력합니다.
+
+```tsx
+console.log("derived values", {
+  visibleOrders,
+  totalPrice,
+  selectedOrder,
+});
+
+function changeOrderStatus(id: string, status: OrderStatus) {
+  console.log("change order status requested", { id, status });
+
+  setOrders((currentOrders) => {
+    const nextOrders = currentOrders.map((order) =>
+      order.id === id ? { ...order, status } : order
+    );
+
+    console.log("changed orders", nextOrders);
+    return nextOrders;
+  });
+}
+```
+
+React 개발 모드에서 `StrictMode`가 켜져 있으면 effect 로그가 두 번 보일 수 있습니다. 이 경우 cleanup과 재실행 흐름을 함께 확인합니다.

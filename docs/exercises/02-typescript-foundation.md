@@ -85,3 +85,45 @@ type OrderRowProps = {
 - `OrderStatusCount`를 `Record<OrderStatus, number>`로 정의한다.
 - `CreateOrderInput`은 `id` 없이 주문 생성에 필요한 값만 받도록 정의한다.
 - 서버 응답 타입과 화면 표시 타입을 분리해 `OrderViewModel`을 만든다.
+
+## 콘솔 출력 확인
+
+타입 정의가 끝나면 실제 값을 만들어 콘솔에서 타입과 실행 결과를 함께 확인합니다. 실습 코드 아래에 다음 확인 코드를 추가합니다.
+
+```ts
+const createdOrderInput: CreateOrderInput = {
+  orderNo: "SO-2026-006",
+  customerName: "Han",
+  totalPrice: 152000,
+};
+
+const updatedOrders = updateOrderStatus({
+  orders,
+  id: "ord_001",
+  status: "paid",
+});
+
+const orderListResponse: OrderListResponse = {
+  data: updatedOrders,
+  message: "orders loaded",
+};
+
+console.log("create order input", createdOrderInput);
+console.log("updated orders", updatedOrders);
+console.log("order list response", orderListResponse);
+console.log("status counts", countOrdersByStatus(updatedOrders));
+```
+
+React props 타입도 화면 구현 전에 콘솔에서 호출 형태를 확인합니다.
+
+```ts
+const rowProps: OrderRowProps = {
+  order: updatedOrders[0],
+  onStatusChange: (id, status) => {
+    console.log("status change requested", { id, status });
+  },
+};
+
+console.log("row props", rowProps);
+rowProps.onStatusChange(rowProps.order.id, "shipped");
+```

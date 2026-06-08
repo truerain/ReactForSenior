@@ -172,3 +172,40 @@ props 이름은 컴포넌트의 의도를 드러내야 합니다. `setValue`, `d
 - 선택된 주문의 상세 영역을 추가한다.
 - 검색어가 없고 필터가 `all`일 때 전체 목록을 보여주는지 확인한다.
 - 필터 결과가 없을 때 empty state를 표시한다.
+
+## 콘솔 출력 확인
+
+UI가 다시 그려지는 흐름을 브라우저 개발자 도구 콘솔에서 확인합니다. `App` 컴포넌트 안에서 `visibleOrders`, 상태별 개수, 총 금액을 계산한 뒤 다음 로그를 추가합니다.
+
+```tsx
+console.log("render App", {
+  keyword,
+  status,
+  selectedOrderId,
+  visibleOrders,
+  totalPrice,
+  statusCounts,
+});
+```
+
+행 선택 이벤트도 콘솔로 확인합니다.
+
+```tsx
+function handleSelectOrder(id: string) {
+  console.log("select order", id);
+  setSelectedOrderId(id);
+}
+```
+
+`OrderRow`에는 `onSelect={handleSelectOrder}`를 전달합니다.
+
+```tsx
+<OrderRow
+  key={order.id}
+  order={order}
+  selected={order.id === selectedOrderId}
+  onSelect={handleSelectOrder}
+/>
+```
+
+React 개발 모드에서 `StrictMode`가 켜져 있으면 렌더 로그가 두 번 보일 수 있습니다. 이 경우 같은 상태를 검증하는 중복 로그로 봅니다.

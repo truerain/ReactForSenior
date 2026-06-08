@@ -14,6 +14,11 @@
 - [TypeScript Foundation](./lessons/02-typescript-foundation.md)
 - [React 사고 모델](./lessons/03-react-mental-model.md)
 - [State and Effects](./lessons/04-state-and-effects.md)
+- [Component Architecture](./lessons/05-component-architecture.md)
+- [Data Fetching and Async UI](./lessons/06-data-fetching-and-async-ui.md)
+- [Performance and Concurrency](./lessons/07-performance-and-concurrency.md)
+- [Testing and Quality](./lessons/08-testing-and-quality.md)
+- [Production Architecture](./lessons/09-production-architecture.md)
 
 ## 실습 과제
 
@@ -21,6 +26,11 @@
 - [주문 도메인 타입 정의](./exercises/02-typescript-foundation.md)
 - [주문 관리 미니 React 앱](./exercises/03-react-mental-model.md)
 - [주문 관리 앱에 State와 Effects 적용하기](./exercises/04-state-and-effects.md)
+- [주문 관리 앱 컴포넌트 아키텍처 리팩터링](./exercises/05-component-architecture.md)
+- [주문 CRUD 흐름과 Async UI 구현](./exercises/06-data-fetching-and-async-ui.md)
+- [주문 목록 성능 측정과 최적화](./exercises/07-performance-and-concurrency.md)
+- [주문 관리 앱 테스트와 품질 게이트](./exercises/08-testing-and-quality.md)
+- [주문 관리 앱 Production Architecture 설계](./exercises/09-production-architecture.md)
 
 ## 운영 원칙
 

@@ -27,11 +27,11 @@
 | 2 | TypeScript Foundation | 타입은 문서인가, 컴파일러가 검사하는 계약인가? | [TypeScript Foundation](./lessons/02-typescript-foundation.md) | [주문 도메인 타입 정의](./exercises/02-typescript-foundation.md) |
 | 3 | React 사고 모델 | React는 언제, 왜 다시 렌더링하는가? | [React 사고 모델](./lessons/03-react-mental-model.md) | [주문 관리 미니 React 앱](./exercises/03-react-mental-model.md) |
 | 4 | State and Effects | 어떤 상태를 어디에 두고, effect는 언제 써야 하는가? | [State and Effects](./lessons/04-state-and-effects.md) | [주문 관리 앱에 State와 Effects 적용하기](./exercises/04-state-and-effects.md) |
-| 5 | Component Architecture | 오래 유지되는 컴포넌트 구조는 무엇이 다른가? | 작성 예정 | 작성 예정 |
-| 6 | Data Fetching and Async UI | 서버 상태는 클라이언트 상태와 어떻게 다른가? | 작성 예정 | 작성 예정 |
-| 7 | Performance and Concurrency | 최적화는 측정 가능한 문제를 해결하고 있는가? | 작성 예정 | 작성 예정 |
-| 8 | Testing and Quality | 사용자의 신뢰를 테스트로 어떻게 보장할 것인가? | 작성 예정 | 작성 예정 |
-| 9 | Production Architecture | 팀 규모에서 React 구조는 어떻게 진화해야 하는가? | 작성 예정 | 작성 예정 |
+| 5 | Component Architecture | 오래 유지되는 컴포넌트 구조는 무엇이 다른가? | [Component Architecture](./lessons/05-component-architecture.md) | [주문 관리 앱 컴포넌트 아키텍처 리팩터링](./exercises/05-component-architecture.md) |
+| 6 | Data Fetching and Async UI | 서버 상태는 클라이언트 상태와 어떻게 다른가? | [Data Fetching and Async UI](./lessons/06-data-fetching-and-async-ui.md) | [주문 CRUD 흐름과 Async UI 구현](./exercises/06-data-fetching-and-async-ui.md) |
+| 7 | Performance and Concurrency | 최적화는 측정 가능한 문제를 해결하고 있는가? | [Performance and Concurrency](./lessons/07-performance-and-concurrency.md) | [주문 목록 성능 측정과 최적화](./exercises/07-performance-and-concurrency.md) |
+| 8 | Testing and Quality | 사용자의 신뢰를 테스트로 어떻게 보장할 것인가? | [Testing and Quality](./lessons/08-testing-and-quality.md) | [주문 관리 앱 테스트와 품질 게이트](./exercises/08-testing-and-quality.md) |
+| 9 | Production Architecture | 팀 규모에서 React 구조는 어떻게 진화해야 하는가? | [Production Architecture](./lessons/09-production-architecture.md) | [주문 관리 앱 Production Architecture 설계](./exercises/09-production-architecture.md) |
 
 ## 평가 기준
 

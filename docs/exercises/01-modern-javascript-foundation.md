@@ -91,3 +91,35 @@ function updateOrderStatus({
 - `status`별 주문 개수를 `reduce`로 계산한다.
 - `Promise.resolve`를 사용해 주문 목록을 비동기로 불러오는 함수를 작성한다.
 - `async/await`로 loading/error 처리를 표현하는 의사 코드를 작성한다.
+
+## 콘솔 출력 확인
+
+실습 결과는 Node.js 콘솔 또는 브라우저 개발자 도구 콘솔에서 확인합니다. 변환한 코드 아래에 다음 확인 코드를 추가합니다.
+
+```ts
+console.log("paid orders", getPaidOrders(orders));
+
+const updatedOrders = updateOrderStatus({
+  orders,
+  id: "ord_001",
+  status: "paid",
+});
+
+console.log("updated orders", updatedOrders);
+console.log("original orders", orders);
+console.log("total price", getTotalPrice(orders));
+```
+
+확장 과제를 구현했다면 각 결과도 반드시 콘솔로 출력합니다.
+
+```ts
+console.log("status counts", getOrderStatusCounts(orders));
+
+loadOrders()
+  .then((loadedOrders) => {
+    console.log("loaded orders", loadedOrders);
+  })
+  .catch((error) => {
+    console.error("load orders failed", error);
+  });
+```

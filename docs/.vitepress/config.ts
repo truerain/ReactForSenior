@@ -41,6 +41,26 @@ export default defineConfig({
             text: "State and Effects",
             link: "/lessons/04-state-and-effects",
           },
+          {
+            text: "Component Architecture",
+            link: "/lessons/05-component-architecture",
+          },
+          {
+            text: "Data Fetching and Async UI",
+            link: "/lessons/06-data-fetching-and-async-ui",
+          },
+          {
+            text: "Performance and Concurrency",
+            link: "/lessons/07-performance-and-concurrency",
+          },
+          {
+            text: "Testing and Quality",
+            link: "/lessons/08-testing-and-quality",
+          },
+          {
+            text: "Production Architecture",
+            link: "/lessons/09-production-architecture",
+          },
         ],
       },
       {
@@ -61,6 +81,26 @@ export default defineConfig({
           {
             text: "주문 관리 앱에 State와 Effects 적용하기",
             link: "/exercises/04-state-and-effects",
+          },
+          {
+            text: "주문 관리 앱 컴포넌트 아키텍처 리팩터링",
+            link: "/exercises/05-component-architecture",
+          },
+          {
+            text: "주문 CRUD 흐름과 Async UI 구현",
+            link: "/exercises/06-data-fetching-and-async-ui",
+          },
+          {
+            text: "주문 목록 성능 측정과 최적화",
+            link: "/exercises/07-performance-and-concurrency",
+          },
+          {
+            text: "주문 관리 앱 테스트와 품질 게이트",
+            link: "/exercises/08-testing-and-quality",
+          },
+          {
+            text: "주문 관리 앱 Production Architecture 설계",
+            link: "/exercises/09-production-architecture",
           },
         ],
       },
